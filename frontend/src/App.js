@@ -96,7 +96,7 @@ function App() {
       <ul className='myMovies'>
         {movies.map((movie) => (
           <li key={movie._id}>
-            <div className='movie'><img src={logo} alt='Film - ' className='icon'/> {movie.title} ({movie.year}) | {movie.director}  | {movie.duration} minuta</div>
+            <div className='movie'><img src={logo} alt='Film - ' className='icon'/>{movie.title} ({movie.year}) | {movie.director}  | {movie.duration} minuta</div>
             <button onClick={() => deleteMovie(movie._id)}>ukloni</button>
           </li>
         ))}
